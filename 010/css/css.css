@@ -1,0 +1,47 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+#wrapper{
+	max-width: 1200px;
+	min-width: 600px;
+	margin: auto;
+}
+header{
+	border: 1px solid #f00;
+	margin: 0;
+	height: 150px;
+}
+section{
+	width: 1200px;
+	
+}
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+side{
+	border: 1px solid #f00;
+	
+	height: 500px;
+	width: 20%;
+	float: left;
+	
+	}
+section main{
+	
+	border: 1px solid #f00;
+
+	margin: 10px 21%;
+	height: 500px;
+	width: 79%;
+}
+footer{
+	border: 1px solid #f00;
+	margin: 0;
+	height: 150px;
+}
