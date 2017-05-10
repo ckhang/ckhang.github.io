@@ -1,0 +1,47 @@
+.formlist{
+	width: 500px;
+	height: 300px;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	background: #fff;
+	text-align: center;
+}
+body{
+	background: deepskyblue;
+}
+.formlist input{
+	width: 70%;
+	height: 40px;
+	margin: 6px 0;
+	border: none;
+	outline: none;
+	border: 1px dashed deepskyblue;
+	
+}
+.formlist input:focus{
+	border: 1px solid deepskyblue;
+	box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,.2);
+}
+.formlist input[type="submit"]{
+	border: none;
+	position: absolute;
+	width: 30%;
+	height: 50px;
+	color: #fff;
+	right: 0;
+	left: 0;
+	bottom: -30px;
+	margin: auto;
+	text-indent: 0;
+	cursor: pointer;
+	transition: all .5s;
+}
+.formlist input[type="submit"]:hover{
+	background: black;
+	color: #fff;
+	letter-spacing: 0.8em;
+}
