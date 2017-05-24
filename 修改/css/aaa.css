@@ -12,7 +12,7 @@
 body{
 	color: #fff;
 	background: url(../img/kfru8cu2crg-blair-fraser.jpg) no-repeat  fixed;
-	background-size: 100%;
+	background-size: cover;
 	max-height: 12000px;
 	position: relative;
 
