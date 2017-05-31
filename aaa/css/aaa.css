@@ -1,0 +1,102 @@
+/*
+ * 鍏ㄥ眬 
+ * 
+ * */
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+ul{
+	list-style: none;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+}
+input{
+	border: none;
+	outline: none;
+}
+.container{
+	max-width: 1200px;
+	margin: auto;
+}
+body{
+	min-height: 1400px;
+	font-family: simhei;
+	margin: auto;
+}
+/*
+ * header閮ㄥ垎
+ * */
+header{
+	position: fixed;
+	width: 100%;
+	padding: 20px 0px;
+	background-color: rgba(0,0,0,0.1);
+}
+header.on{
+	padding: 5px 0px;
+	background-color: rgba(0,0,0,0.5);
+}
+header a{
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+header a:hover{
+	color: #339BEB;
+}
+header .logo{
+	float: left;
+}
+header .logo img,
+header .logo span{
+	vertical-align: middle;
+}
+header .logo img{
+	width: 80px;
+}
+header .logo span{
+	font-size:3.5em;
+	font-family: 'Dancing Script', cursive;
+}
+header .topMenu{
+	float: right;
+	margin-top: 5px;
+}
+header .topMenu ul li{
+	float: left;
+	margin: 0px 30px;
+}
+/*
+ * banner
+ * */
+
+.banner{
+	
+	min-height: 600px;
+	background:  url(../img/pexels-photo-424254.jpeg) no-repeat center;
+	color: #FFFFFF;
+}
+.banner .container{
+	width: 800px;
+	height: 160px;
+	line-height: 1.5;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+.banner .container h1{
+	text-align: center;
+}
+.banner .container h1 strong{
+	color: deepskyblue;
+}
+.banner .container p strong{
+	background: rgba(255,255,255,.5);
+	color: #000;
+}
