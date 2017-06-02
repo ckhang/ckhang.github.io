@@ -1,0 +1,159 @@
+/*
+ * 鍏ㄥ眬 
+ * 
+ * */
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+ul{
+	list-style: none;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+}
+input{
+	border: none;
+	outline: none;
+}
+.container{
+	max-width: 1200px;
+	margin: auto;
+}
+body{
+	min-height: 1400px;
+	font-family: simhei;
+	margin: auto;
+}
+/*
+ * header閮ㄥ垎
+ * */
+header{
+	position: fixed;
+	width: 100%;
+	padding: 20px 0px;
+	background-color: rgba(0,0,0,0.1);
+}
+header.on{
+	padding: 5px 0px;
+	background-color: rgba(0,0,0,0.5);
+}
+header a{
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+header a:hover{
+	color: #339BEB;
+}
+header .logo{
+	float: left;
+}
+header .logo img,
+header .logo span{
+	vertical-align: middle;
+}
+header .logo img{
+	width: 80px;
+}
+header .logo span{
+	font-size:3.5em;
+	font-family: 'Dancing Script', cursive;
+}
+header .topMenu{
+	float: right;
+	margin-top: 5px;
+}
+header .topMenu ul li{
+	float: left;
+	margin: 0px 30px;
+}
+/*
+ * banner
+ * */
+
+.banner{
+	
+	min-height: 600px;
+	background:  url(../img/pexels-photo-424254.jpeg) no-repeat center;
+	color: #FFFFFF;
+}
+.banner .container{
+	width: 800px;
+	height: 160px;
+	line-height: 1.5;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+.banner .container h1{
+	text-align: center;
+}
+.banner .container h1 strong{
+	color: deepskyblue;
+}
+.banner .container p strong{
+	background: rgba(255,255,255,.5);
+	color: #000;
+}
+/*about*/
+section h2{
+	text-align: center;
+	margin-top: 50px;
+}
+section  h2+p{
+	text-align: center;
+	margin-bottom: 80px;
+}
+.about img{
+	width: 48%;
+	float: left;
+}
+
+.about .note{
+width: 48%;
+float: right;
+}
+.about .note p:first-child{
+	margin-top: auto;
+}
+.about .note p{
+	line-height: 2.2;
+}
+.about .note  ol{
+	line-height: 3;
+	list-style-type: none;
+	padding: 0px;
+	cursor: pointer;
+	counter-reset: liconter;
+}
+.about .note li{
+	counter-increment: liconter;
+}
+.about .note li::before{
+	content: counter(liconter);
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	text-align: center;
+	line-height: 20px;;
+	border: 1px dashed #000;
+	border-radius: 20px;
+	margin-right: 30px;
+	transition: transform .30s;
+}
+.about .note li:hover::before{
+	transform: translate(20px);
+}
+
+
+
+
+
+
+
+
