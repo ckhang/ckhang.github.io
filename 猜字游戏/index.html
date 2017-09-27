@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			#aaa{
+				width: 400px;
+				height: 300px;
+				margin: auto;
+				margin-top: 150px;
+			}
+			#text{
+				width: 200px;
+				height: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="aaa">
+			<h2>猜字游戏</h2>
+			<input type="number" name="num" id="num" value="" />
+			<input type="button" name="btn1" id="btn1" value="确定" />
+		<div id="text"></textarea></div>
+		</div>
+		
+		<script type="text/javascript">
+			var numget=10;
+			var numrest=parseInt(Math.random()*(numget+1));
+			var oNum=document.querySelector("#num");
+			var oBtn1=document.querySelector("#btn1");
+			var oText=document.querySelector("#aaa #text");
+			
+			oBtn1.addEventListener("click",clickit);
+			function clickit(){
+				var numb=parseInt(oNum.value);
+				if(numb>numrest){
+					oText.innerHTML="大了大了"+numb+"太大了";
+				}
+				if(numb<numrest){
+					oText.innerHTML="小了小了"+numb+"太小了";
+				}
+				if(numb==numrest){
+					oText.innerHTML="终于对了"+numb+"正正好";
+				}
+			}
+		</script>
+	</body>
+</html>
