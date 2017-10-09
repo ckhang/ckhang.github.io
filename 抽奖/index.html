@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			#all{
+				width: 500px;
+				margin: auto;
+				margin-top: 100px;
+			}
+			#first{
+				margin-top: 80px;
+			}
+			#second{
+				margin-top: 80px;
+			}
+			#there{
+				margin-left: 20px;
+			}
+			#btn{
+				width:100px;
+				margin-top: 30px;
+				margin-left: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="all">
+			<h1>抽奖环节</h1>
+			<div id="first"><lable >一等奖</lable><input type="text" name="one" id="one" value="" /><br />
+				
+			</div>
+			<div id="second">
+				<lable>二等奖</lable><input type="text" name="two" id="two" value="" /><input type="text" name="there" id="there" value="" />
+			</div>
+			<input type="button" name="" id="btn" value="抽奖" />
+		</div>
+		<script type="text/javascript">
+			var Otext1=document.getElementById("one");
+			var Otext2=document.getElementById("two");
+			var Otext3=document.getElementById("there");
+			var array=new Array(3);
+			var Obtn=document.getElementById("btn");
+			Obtn.addEventListener('click',clicker);
+			function clicker(){
+				for(var i=0;i<3;i++){
+					array[i]=Math.floor(Math.random()*46-1);
+					for(var j=0;j<i.length;j++){
+						if(array[i]==array[j]){
+							i--;
+							console.log(array[i]);
+							break;
+						}
+					}
+				}
+			Otext1.value=array[0];
+			Otext2.value=array[1];
+			Otext3.value=array[2];
+			}
+		</script>
+	</body>
+</html>
